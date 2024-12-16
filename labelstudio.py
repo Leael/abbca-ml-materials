@@ -117,7 +117,7 @@ class LabelStudio():
         # Convert to COCO format
         for data_id, json_data in self.captures.items():
             temp_coco = []
-            pbar = tqdm(json_data, desc=f"Converting COCO format")
+            pbar = tqdm(json_data, desc=f"Converting {data_id} to COCO format")
             for annot in json_data:
                 image_name = annot['data']['image'].split('/')[-1]
                 filename = os.path.join(output_dir, 'images', data_id, image_name)
