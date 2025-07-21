@@ -54,7 +54,7 @@ def draw(frame, results, width, height):
     return image_inferred
 
 def main():   
-    source = cv2.VideoCapture(R"C:\Users\LeaM\Downloads\20250307174644.ts")
+    source = cv2.VideoCapture(0)
     width = 1920 #1920 #640 #cap.get(cv2.CAP_PROP_FRAME_WIDTH)
     height = 1080 #1080 #640 #cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
     while source.isOpened():
